@@ -6,7 +6,126 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header class="wrapper">
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <a class="site-logo">Sedona logo</a>
+    </header>
+
+
+    <main class="wrapper">
+
+      <section class="site-intro">
+        <img src="#" alt="Welcome to the gorgeous">
+        <h1>Sedona</h1>
+        <img src="#" alt="Because the Grand Canyon sucks">
+        <div class="intro-text">
+          <b>СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</b>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+
+      <section class="feature-one">
+        <div class="feature-one__text">
+          <h2>Настоящий городок</h2>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img src="" alt="" class="feature-one__photo">
+        <ul class="feature-one__list">
+          <li class="feature-one__items">
+            <b>Жилье</b>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="feature-one__items">
+            <b>Еда</b>
+            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </li>
+          <li class="feature-one__items">
+            <b>Сувениры</b>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="feature-two">
+        <div class="feature-two__text">
+          <h2>Там есть мост дьявола</h2>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <img src="" alt="" class="feature-two__photo">
+        <ul class="feature-two__list">
+          <li class="feature-two__items">
+            <b>Небольшшая площадь</b>
+            <p>ВСЕ достопримечательности находятся очень близко</p>
+          </li>
+          <li class="feature-two__items">
+            <b>Красивая дорога</b>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="feature-two__items">
+            <b>Мало туристов</b>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search-hotel">
+        <div class="search-hotel__text">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
+        <a class="search-hotel__button" href="#">Поиск гостиницы в Седоне</a>
+        <section class="search-hotel__popup">
+          <h2 style="display: none;">Подбор гостиницы</h2>
+          <form action="#" method="get">
+            <p>
+              <label for="arrival-date">Дата заезда</label>
+              <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+            </p>
+            <p>
+              <label for="departure-date">Дата выезда</label>
+              <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+            </p>
+            <p>
+              <label for="adult-amount">Взрослые</label>
+              <input type="button" value="-" class="search-hotel__form">
+              <input type="text" name="adult-amount" id="adult-amount" value="2">
+              <input type="button" value="+" class="search-hotel__form">
+            </p>
+            <p>
+              <label for="children-amount">Взрослые</label>
+              <input type="button" value="-" class="search-hotel__form">
+              <input type="text" name="children-amount" id="children-amount" value="0">
+              <input type="button" value="+" class="search-hotel__form">
+            </p>
+            <input type="submit" value="Найти">
+          </form>
+        </section>
+      </section>
+
+      <div class="search-map">
+        <img src="" alt="Map">
+      </div>
+    </main>
+
+
+    <footer class="main-footer">
+      <span class="main-footer__tag">#visitsedona</span>
+      <section class="main-footer__social">
+        <h3 style="display: none;">Мы в соц. сетях:</h3>
+        <a href="twitter.com" class="social-btn social__tw">Twitter</a>
+        <a href="facebook.com" class="social-btn social__fb">Facebook</a>
+        <a href="youtube.com" class="social-btn social__yt">YouTube</a>
+      </section>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer__copyright">Website by
+      <span class="main-footer__copyright--logo">HTML Academy</span></a>
+    </footer>
 
   </body>
 </html>
