@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
@@ -23,12 +23,9 @@
         </div>
       </header>
 
-      <main>
+      <main class="main-content">
         <section class="intro-photo">
-          <img src="img/welcome.png" alt="Welcome" width="188" height="45">
-          <img src="img/gorgeous.png" alt="to the gorgeous" width="256" height="30">
-          <h1>Sedona</h1>
-          <img src="img/because_sucks.png" alt="Because the Grand Canyon sucks" width="293" height="80">
+          <h1 class="hidden">Sedona</h1>
         </section>
         <section class="intro-text">
           <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
@@ -41,29 +38,29 @@
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="feature__photo">
-            <img src="img/features-photo-1.jpg" alt="">
+            <!-- <img src="img/features-photo-1.jpg" alt=""> -->
           </div>
         </section>
         <section class="advantages">
-          <h2 style="display: none;">Наши преимущества</h2>
+          <h2 class="hidden">Наши преимущества</h2>
           <ul>
-            <li class="advantages__item">
-              <h3>Жилье</h3>
+            <li class="advantages__item advantages__item--house">
+              <h2>Жилье</h2>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li class="advantages__item">
-              <h3>Еда</h3>
+            <li class="advantages__item advantages__item--food">
+              <h2>Еда</h2>
               <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
-            <li class="advantages__item">
-              <h3>Сувениры</h3>
+            <li class="advantages__item advantages__item--souvenirs">
+              <h2>Сувениры</h2>
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </section>
         <section class="feature">
           <div class="feature__photo">
-            <img src="img/features-photo-2.jpg" alt="">
+            <!-- <img src="img/features-photo-2.jpg" alt=""> -->
           </div>
           <div class="feature__text">
             <h2>Там есть мост дьявола</h2>
@@ -72,32 +69,30 @@
           </div>
         </section>
         <section class="features-list">
-          <ul>
-            <li class="features-list__item">
-              <h2>Небольшшая площадь</h2>
-              <span>&ndash; №3 &ndash;</span>
-              <p>ВСЕ достопримечательности находятся очень близко</p>
-            </li>
-            <li class="features-list__item">
-              <h2>Красивая дорога</h2>
-              <span>&ndash; №4 &ndash;</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="features-list__item">
-              <h2>Мало туристов</h2>
-              <span>&ndash; №5 &ndash;</span>
-              <p>Большинство едет в гранд каньон и толпится там</p>
-            </li>
-          </ul>
+          <div class="features-list__item">
+            <h2>Небольшая площадь</h2>
+            <span>&ndash; №3 &ndash;</span>
+            <p>ВСЕ достопримечательности находятся очень близко</p>
+          </div>
+          <div class="features-list__item">
+            <h2>Красивая дорога</h2>
+            <span>&ndash; №4 &ndash;</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="features-list__item">
+            <h2>Мало туристов</h2>
+            <span>&ndash; №5 &ndash;</span>
+            <p>Большинство едет в гранд каньон и толпится там</p>
+          </div>
         </section>
         <section class="search-hotel">
           <div class="search-hotel__text">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="search-hotel__button" href="#">Поиск гостиницы в Седоне</a>
           </div>
-          <a class="search-hotel__button" href="#">Поиск гостиницы в Седоне</a>
           <section class="search-hotel__popup">
-            <h2 style="display: none;">Подбор гостиницы</h2>
+            <h2 class="hidden">Подбор гостиницы</h2>
             <form action="#" method="get">
               <p>
                 <label for="arrival-date">Дата заезда</label>
@@ -124,16 +119,17 @@
           </section>
         </section>
         <div class="search-map">
-          <!-- <iframe height="474" frameborder="0" style="border:0"
+          <iframe height="474" frameborder="0" style="border:0"
             src="https://www.google.com/maps/embed/v1/search?q=Sedona%2C%20AZ%2C%20United%20States&key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o&zoom=9&center=34.869854,-111.761137"
             allowfullscreen>
-              <img src="img/map.jpg" alt="Sedona map">
-            </iframe> -->
+          </iframe>
         </div>
       </main>
 
       <footer class="main-footer">
-        <span class="main-footer__tag">#visitsedona</span>
+        <div class="main-footer__tag">
+            <span>#visitsedona</span>
+        </div>
         <section class="main-footer__social">
           <h3 style="display: none;">Мы в соц. сетях:</h3>
           <ul>
