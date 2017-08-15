@@ -1,9 +1,28 @@
 body {
   background-color: #f2f2f2;
   font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+}
+
+.feature__text h2 {
+  width: 155px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.search-results__description h1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
 }
 
 .wrapper {
@@ -246,17 +265,21 @@ text-align: right;
   left: 0;
   right: 0;
   margin: 0 auto;
-  background: url("../img/features-logo-house.png") no-repeat;
+  background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
 }
 
+.advantages__item--house::after {
+  background-image: url("../img/icon-house.svg");
+}
+
 .advantages__item--food::after {
-  background-image: url("../img/features-logo-food.png");
+  background-image: url("../img/icon-food.svg");
 }
 
 .advantages__item--souvenirs::after {
-  background-image: url("../img/features-logo-souvenirs.png");
+  background-image: url("../img/icon-souvenirs.svg");
 }
 
 .features-list {
