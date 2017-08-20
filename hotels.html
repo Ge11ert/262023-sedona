@@ -25,8 +25,8 @@
 
       <main>
         <section class="filter">
-          <h2 style="display: none;">Фильтр</h2>
-          <form action="#" method="get" class="search-form">
+          <h2 class="visually-hidden">Фильтр</h2>
+          <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
             <div class="fieldset-container">
               <fieldset class="search-form__infra">
                 <legend>Инфраструктура</legend>
@@ -63,20 +63,27 @@
             </div>
             <div class="fieldset-container">
               <fieldset class="search-form__price">
-                <div class="search-form__price--indicator">
-                  <span class="min-price">От 0</span>
-                  <span class="max-price">До 3000</span>
+                <legend>Стоимость в сутки (Р):</legend>
+                <div class="indicator">
+                  <label for="min-price">От</label>
+                  <input type="text" name="min-price" id="min-price" value="0">
+                  <label for="max-price">До</label>
+                  <input type="text" name="max-price" id="max-price" value="3000">
                 </div>
-                <input type="range" name="price" id="price" min="0" max="5000">
+                <div class="slider">
+                  <span class="slider__handle slider__handle--left" tabindex="0" role="slider"></span>
+                  <span class="slider__handle slider__handle--right" tabindex="0" role="slider"></span>
+                  <span class="slider__active-segment"></span>
+                </div>
                 <input type="submit" value="Показать">
               </fieldset>
             </div>
           </form>
         </section>
         <section class="search-results">
-          <h2 style="display: none;">Результаты поиска:</h2>
+          <h2 class="visually-hidden">Результаты поиска:</h2>
           <div class="search-results__header">
-            <span class="search-results__amount">Найдено: 3</span>
+            <span class="search-results__total">Найдено: 3</span>
             <section class="search-results__sort">
               <span>Сортировка:</span>
               <ul class="search-results__sort-type">

@@ -25,7 +25,7 @@
 
       <main class="main-content">
         <section class="intro-photo">
-          <h1 class="hidden">Sedona</h1>
+          <h1 class="visually-hidden">Sedona</h1>
         </section>
         <section class="intro-text">
           <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
@@ -37,12 +37,12 @@
             <span>&ndash; №1 &ndash;</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="feature__photo">
+          <div class="feature__photo feature__photo--1">
             <!-- <img src="img/features-photo-1.jpg" alt=""> -->
           </div>
         </section>
         <section class="advantages">
-          <h2 class="hidden">Наши преимущества</h2>
+          <h2 class="visually-hidden">Наши преимущества</h2>
           <ul>
             <li class="advantages__item advantages__item--house">
               <h2>Жилье</h2>
@@ -59,7 +59,7 @@
           </ul>
         </section>
         <section class="feature">
-          <div class="feature__photo">
+          <div class="feature__photo feature__photo--2">
             <!-- <img src="img/features-photo-2.jpg" alt=""> -->
           </div>
           <div class="feature__text">
@@ -72,7 +72,7 @@
           <div class="features-list__item">
             <h2>Небольшая площадь</h2>
             <span>&ndash; №3 &ndash;</span>
-            <p>ВСЕ достопримечательности находятся очень близко</p>
+            <p>Все достопримеча&shy;тельности находятся очень близко</p>
           </div>
           <div class="features-list__item">
             <h2>Красивая дорога</h2>
@@ -92,15 +92,17 @@
             <a class="search-hotel__button" href="#">Поиск гостиницы в Седоне</a>
           </div>
           <section class="search-hotel__popup">
-            <h2 class="hidden">Подбор гостиницы</h2>
-            <form action="#" method="get">
+            <h2 class="visually-hidden">Подбор гостиницы</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
               <p>
                 <label for="arrival-date">Дата заезда</label>
                 <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2017">
+                <img src="img/calendar.svg" alt="">
               </p>
               <p>
                 <label for="departure-date">Дата выезда</label>
                 <input type="text" name="departure-date" id="departure-date" value="4 июля 2017">
+                <img src="img/calendar.svg" alt="">
               </p>
               <p>
                 <label for="adult-amount">Взрослые</label>
@@ -127,18 +129,21 @@
       </main>
 
       <footer class="main-footer">
-        <div class="main-footer__tag">
-            <span>#visitsedona</span>
-        </div>
-        <section class="main-footer__social">
-          <h3 style="display: none;">Мы в соц. сетях:</h3>
+        <section class="main-footer__element">
+          <h3 class="visually-hidden">Наш хэштег:</h3>
+          <span class="main-footer__tag">#visitsedona</span>
+        </section>
+        <section class="main-footer__element main-footer__social">
+          <h3 class="visually-hidden">Мы в соц. сетях:</h3>
           <ul>
             <li><a href="twitter.com" class="social-btn social-btn--tw">Twitter</a></li>
             <li><a href="facebook.com" class="social-btn social-btn--fb">Facebook</a></li>
             <li><a href="youtube.com" class="social-btn social-btn--yt">YouTube</a></li>
           </ul>
         </section>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer__copyright">Website by <span>HTML Academy</span></a>
+        <section class="main-footer__element">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer__copyright">Website by <span>HTML Academy</span></a>
+        </section>
       </footer>
 
     </div>
