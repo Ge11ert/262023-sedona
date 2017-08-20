@@ -49,15 +49,15 @@
                 <legend>Тип жилья</legend>
                 <p>
                   <input type="checkbox" name="hotel" id="hotel" checked>
-                  <label for="waterpool">Гостиница</label>
+                  <label for="hotel">Гостиница</label>
                 </p>
                 <p>
                   <input type="checkbox" name="motel" id="motel" checked>
-                  <label for="parking">Мотель</label>
+                  <label for="motel">Мотель</label>
                 </p>
                 <p>
                   <input type="checkbox" name="apartments" id="apartments" checked>
-                  <label for="wifi">Апартаменты</label>
+                  <label for="apartments">Апартаменты</label>
                 </p>
               </fieldset>
             </div>
@@ -65,10 +65,14 @@
               <fieldset class="search-form__price">
                 <legend>Стоимость в сутки (Р):</legend>
                 <div class="indicator">
-                  <label for="min-price">От</label>
-                  <input type="text" name="min-price" id="min-price" value="0">
-                  <label for="max-price">До</label>
-                  <input type="text" name="max-price" id="max-price" value="3000">
+                  <p>
+                    <label for="min-price">От</label>
+                    <input type="text" name="min-price" id="min-price" value="0">
+                  </p>
+                  <p>
+                    <label for="max-price">До</label>
+                    <input type="text" name="max-price" id="max-price" value="3000">
+                  </p>
                 </div>
                 <div class="slider">
                   <span class="slider__handle slider__handle--left" tabindex="0" role="slider"></span>

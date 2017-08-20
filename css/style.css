@@ -371,8 +371,12 @@ a.search-hotel__button {
   padding-left: 6%;
   padding-right: 6%;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 31px;
   background-color: #6c7780;
+  background-image: url("../img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .search-form {
@@ -386,13 +390,6 @@ a.search-hotel__button {
   margin: 0;
 }
 
-.fieldset-container p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 21px;
-  color: white;
-}
-
 .fieldset-container legend {
   font-size: 16px;
   line-height: 21px;
@@ -400,6 +397,77 @@ a.search-hotel__button {
   color: white;
 }
 
+.fieldset-container p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+}
+
+.fieldset-container input[type="checkbox"] {
+  display: none;
+}
+
+.fieldset-container label {
+  padding-left: 41px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  left: 0;
+  top: 0;
+}
+
+input[type="checkbox"]:not(:checked) + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  left: 0;
+  top: 0;
+}
+
+.search-form__price .indicator {
+  display: flex;
+  align-items: center;
+  width: 318px;
+  height: 36px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 3px;
+}
+
+.indicator p {
+  height: 22px;
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.indicator p:first-child {
+  border-right: 2px solid white;
+}
+
+.indicator input[type="text"] {
+  width: 45px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.indicator label {
+  padding: 0;
+}
 
 .search-results__description h1 {
   font-size: 21px;
