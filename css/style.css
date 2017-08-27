@@ -221,6 +221,11 @@ text-align: right;
   margin: 0;
 }
 
+.feature:last-of-type .feature__text {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
 .feature__photo {
   width: 66.66%;
   height: 256px;
@@ -342,7 +347,6 @@ text-align: right;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
 }
 
 .search-hotel__text {
@@ -389,9 +393,16 @@ a.search-hotel__button:active {
   background-color: #503e33;
 }
 
+.search-map {
+  position: relative;
+}
+
 .search-hotel__popup {
   position: absolute;
-  top: 226px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   z-index: 1;
   padding: 55px;
@@ -611,12 +622,18 @@ input[type="checkbox"]:not(:checked) + label::after {
 }
 
 .search-form input[type="submit"] {
+  width: 137px;
+  height: 36px;
+  box-sizing: border-box;
+  margin-left: 85px;
+  margin-top: 54px;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
+  border-radius: 3px;
   font-size: 14px;
   line-height: 21px;
-  margin-right: 36px;
+  text-transform: uppercase;
 }
 
 .search-form input[type="submit"]:hover,
@@ -649,13 +666,13 @@ input[type="checkbox"]:not(:checked) + label::after {
 /* --- Секция с сортировкой поиска --- */
 
 .search-results__header {
-  height: 56px;
-  padding-top: 31px;
+  height: 86px;
 }
 
 .search-results__total {
   font-size: 21px;
   font-weight: 26px;
+  margin-top: 31px;
 }
 
 .search-results__sort-type,
@@ -676,13 +693,13 @@ input[type="checkbox"]:not(:checked) + label::after {
 .search-results__sort-type span {
   float: left;
   margin-right: 38px;
-  margin-top: 5px;
+  margin-top: 36px;
 }
 
 .search-results__sort-type li {
   display: inline-block;
   margin-right: 33px;
-  margin-top: 5px;
+  margin-top: 36px;
 }
 
 .search-results__sort-type li:last-child {
@@ -712,8 +729,17 @@ input[type="checkbox"]:not(:checked) + label::after {
 	border: none;
 }
 
+.search-results__sort-direction ul {
+  text-align: right;
+}
+
 .search-results__sort-direction li {
   display: inline-block;
+  margin-top: 39px;
+}
+
+.search-results__sort-direction li:first-child {
+  margin-right: 12px;
 }
 
 .search-results__sort-direction .current {
@@ -882,4 +908,8 @@ input[type="checkbox"]:not(:checked) + label::after {
  .main-footer__tag,
  .main-footer__copyright {
    margin: auto;
+ }
+
+ .main-footer__tag {
+   font-size: 21px;
  }
