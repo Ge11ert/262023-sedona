@@ -16,6 +16,7 @@ a {
 .wrapper {
   display: flex;
   min-height: 100vh; /* для sticky footer*/
+  flex: 1 0 auto;
   flex-direction: column;
   background-color: white;
   margin: 0 auto;
@@ -68,7 +69,7 @@ a {
   flex-wrap: wrap;
   list-style: none;
   width: 100%;
-  min-height: 56px;
+  height: 56px;
   margin: 0;
   padding: 0;
 }
@@ -193,8 +194,8 @@ text-align: right;
   box-sizing: border-box;
   color: white;
   padding-top: 45px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 4%;
+  padding-right: 4%;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -219,6 +220,7 @@ text-align: right;
   line-height: 21px;
   font-weight: normal;
   margin: 0;
+  max-width: 100%; /*IE 11 fix*/
 }
 
 .feature:last-of-type .feature__text {
@@ -341,6 +343,7 @@ text-align: right;
   line-height: 21px;
   margin: 0;
   font-weight: normal;
+  max-width: 100%; /*IE 11 fix*/
 }
 
 .search-hotel {
@@ -859,6 +862,7 @@ input[type="checkbox"]:not(:checked) + label::after {
  /* --- Подвал страницы --- */
 
  .main-footer {
+   flex-shrink: 0;
    display: flex;
    height: 120px;
  }
