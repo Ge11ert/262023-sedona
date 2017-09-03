@@ -959,6 +959,10 @@ a.search-hotel__button:active {
   margin-right: 12px;
 }
 
+.search-results__sort-direction .arrow {
+  fill: #cacaca;
+}
+
 .search-results__sort-direction .current {
   fill: #81b3d2;
 }
@@ -967,7 +971,7 @@ a.search-hotel__button:active {
   fill: #231F20;
 }
 
-.search-results__sort-direction .arrow:active  {
+.search-results__sort-direction path:active {
   fill: #81b3d2;
 }
 
