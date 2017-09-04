@@ -1,3 +1,4 @@
+
 var searchForm = document.querySelector(".search-hotel__popup");
 var searchButton = document.querySelector(".search-hotel__button");
 var lessButton = document.querySelectorAll(".amount-container .less-button");
@@ -18,11 +19,11 @@ var childrens = {
   childrenTotal: childrenInput.value
 }
 
-searchForm.classList.add("visually-hidden");
+searchForm.classList.remove("show-popup");
 
 searchButton.addEventListener("click", function(e) {
   e.preventDefault();
-  searchForm.classList.toggle("visually-hidden");
+  searchForm.classList.toggle("show-popup");
 });
 
 adults.adults__lessButton.addEventListener("click", function(e) {
